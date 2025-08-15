@@ -17,8 +17,8 @@ I'll build a simple but smart computer model to find out!
 ### 📂 Project Structure
 
 Here's how the project files are organized:
-└── student-score-prediction/
 
+└── student-score-prediction/
     ├── 📄 README.md                           # You are here!
     ├── 📄 requirements.txt                    # Project dependencies
     ├── 📁 sample_dataset/                     # Holds the raw dataset

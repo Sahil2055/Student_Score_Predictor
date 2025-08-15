@@ -17,21 +17,19 @@ I'll build a simple but smart computer model to find out!
 ### 📂 Project Structure
 
 Here's how the project files are organized:
-
-└── student-score-prediction/
-    
-    ├── 📄 README.md                           # You are here!
-    ├── 📄 requirements.txt                    # Project dependencies
-    ├── 📁 sample_dataset/                     # Holds the raw dataset
+    └── student-score-prediction/
+        ├── 📄 README.md                           # You are here!
+        ├── 📄 requirements.txt                    # Project dependencies
+        ├── 📁 sample_dataset/                     # Holds the raw dataset
         └──student_performance_dataset.csv          # The dataset used in the project
-    ├── 📁 notebooks/                          # Jupyter Notebooks for exploration
-        └── 📄 data_
-    ├── 📁 src/                                # Main Python code
-        ├──
-        └──
-    └── 📁 visualizations/        # Saved plots and charts
-        ├──
-        └──
+        ├── 📁 notebooks/                          # Jupyter Notebooks for exploration
+            └── 📄 data_
+        ├── 📁 src/                                # Main Python code
+            ├──
+            └──
+        └── 📁 visualizations/        # Saved plots and charts
+            ├──
+            └──
 
 ---
 

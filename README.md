@@ -68,17 +68,16 @@ You can explore my analysis or run the interactive web app by following these st
 - A passion for data! ✨
 
 ### Step 1: Set Up the Environment
+
 First, clone this repository and set up the Python environment.
-1. Clone the repository to your computer
-   -   `git clone <your-github-repo-link>`
 
--   2. Navigate into the project directory
-`cd student-score-prediction`
+-   Clone the repository to your computer: `git clone <your-github-repo-link>`
 
--   3. Create and activate a virtual environment
-python -m venv .venv
-# On Windows: .venv\Scripts\activate
-# On macOS/Linux: source .venv/bin/activate
+-   Navigate into the project directory: `cd student-score-prediction`
+
+-   Create and activate a virtual environment:
+    -   On Windows: `.venv\Scripts\activate`
+    -   On macOS/Linux: `source .venv/bin/activate`
 
 -   4. Install all the necessary libraries
 pip install -r requirements.txt

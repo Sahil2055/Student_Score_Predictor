@@ -91,6 +91,7 @@ Start Jupyter Lab using this `jupyter lab` and then, navigate to the `notebooks/
 -   First, train and save the model: `python scripts/train_model.py`
 
 -   Now, launch the Streamlit web app: `streamlit run webapp/app.py`
+
 A new tab will open in your web browser with the interactive dashboard!
 
 ---

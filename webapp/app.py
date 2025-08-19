@@ -2,20 +2,30 @@
 # It loads the trained model and provides a user interface for predicting student exam scores.
 
 
+
 # Importing necessary libraries
 import streamlit as st
 import joblib
 import numpy as np
 import os
 
-# --- 1. Build the absolute path to the model file ---
-# This creates a reliable path that works on any computer or server.
-MODEL_DIR = os.path.dirname(os.path.abspath(__file__)) # Gets the directory of the app.py file
-ROOT_DIR = os.path.join(MODEL_DIR, '..') # Moves one level up to the main project folder
-MODEL_PATH = os.path.join(ROOT_DIR, 'student_score_model.pkl') # Specifies the model file name
 
 
-# --- 1. Load the saved model ---
+# --- 1. Build reliable paths for both the model and the images ---
+
+# This creates paths that work on any computer or server.
+APP_DIR = os.path.dirname(os.path.abspath(__file__))      # Directory of this app.py file
+ROOT_DIR = os.path.join(APP_DIR, '..')                     # Moves one level up to the main project folder
+MODEL_PATH = os.path.join(ROOT_DIR, 'student_score_model.pkl')    # Path to the model    
+
+# Paths to all three visualization images
+HEATMAP_PATH = os.path.join(ROOT_DIR, 'visualizations', 'heatmap.png')     # Path to the heatmap image
+PAIRPLOT_PATH = os.path.join(ROOT_DIR, 'visualizations', 'pairplot.png')    # Path to the pairplot image
+SCATTER_PLOT_PATH = os.path.join(ROOT_DIR, 'visualizations', 'study_hours_vs_exam_score.png')    # Path to the study_hours_vs_exam_score image
+
+
+
+# --- 2. Load the saved model ---
 # The model file is one level up from the 'webapp' folder
 try:
     model = joblib.load(MODEL_PATH)
@@ -27,7 +37,7 @@ except Exception as e:
     st.stop()
 
 
-# --- 2. Create the web page layout ---
+# --- 3. Create the web page layout ---
 
 # Set the title of the web app
 st.title('🎓 Student Exam Score Predictor')
@@ -40,7 +50,7 @@ Adjust the sliders below to see the predicted score change.
 
 
 
-# --- 3. Create the user input elements in the sidebar ---
+# --- 4. Create the user input elements in the sidebar ---
 st.sidebar.header('Input Student Data')
 
 # Create a slider for 'Hours Studied'
@@ -52,7 +62,7 @@ attendance = st.sidebar.slider('Attendance Percentage (%)', 0, 100, 80)
 
 
 
-# --- 4. Make a prediction and display the result ---
+# --- 5. Make a prediction and display the result ---
 
 # When the user clicks the 'Predict' button
 if st.sidebar.button('Predict Score'):
@@ -79,8 +89,32 @@ if st.sidebar.button('Predict Score'):
 
 
 
-# Optional: Add an image from project to make it more attractive
-# Make sure the path is correct relative to the 'app.py' file
-st.image('../Student_Score_Predictor/visualizations/pairplot.png', caption='Pairplot of Study Hours, Attendance, and Exam Score')
-st.image('../Student_Score_Predictor/visualizations/heatmap.png', caption='Correlation Heatmap of Key Factors')
-st.image('../Student_Score_Predictor/visualizations/study_hours_vs_exam_score.png', caption='Scatter Plot with Regression Line of Study Hours vs Exam Score')
+# --- 6. Display the images using the reliable path ---
+st.markdown("---") # Adds a horizontal line for separation
+st.header("Exploratory Data Analysis Visualizations")
+st.write("These charts from the analysis show the relationships in the data.")
+
+# Display Heatmap
+try:
+    st.image(HEATMAP_PATH, caption='Correlation Matrix of Key Variables')
+except Exception as e:
+    st.warning(f"Could not load heatmap.")
+
+# Display Pairplot
+try:
+    st.image(PAIRPLOT_PATH, caption='Pairplot of Key Variables')
+except Exception as e:
+    st.warning(f"Could not load pairplot.")
+
+# Display Scatter Plot
+try:
+    st.image(SCATTER_PLOT_PATH, caption='Scatter Plot of Study Hours vs. Exam Score with Regression Line')
+except Exception as e:
+    st.warning(f"Could not load scatter plot.")
+
+
+
+# --- 7. Add a footer with contact information ---
+st.markdown("---") # Adds a horizontal line for separation
+st.write("Created by Sahil Kesharwani")
+st.write("For any questions or feedback, please contact: [sahil.kesharwani.927@gmail.com]")

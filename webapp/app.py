@@ -11,7 +11,7 @@ import numpy as np
 # --- 1. Load the saved model ---
 # The model file is one level up from the 'webapp' folder
 try:
-    model = joblib.load('../student_score_model.pkl')
+    model = joblib.load('../Student_Score_Predictor/student_score_model.pkl')
 except FileNotFoundError:
     st.error("Model file not found! Please run the training script first from your terminal: python scripts/train_model.py")
     st.stop()

@@ -34,24 +34,21 @@ I organized the project in a clean and professional manner. Here’s a look at t
 
 student-score-prediction/
 
-│
-├── 📁 data/
-│   └── student_performance_dataset.csv  (The raw data for our project)
-│
+└── 📁 data/
+    └── student_performance_dataset.csv  (The raw data for our project)
+
 ├── 📁 notebooks/
-│   └── student_score_analysis.ipynb     (Our main analysis and model exploration)
-│
+    └── student_score_analysis.ipynb     (Our main analysis and model exploration)
+
 ├── 📁 presentations/
-│   └── (Your project presentation/PPT files go here)
-│
+    └── (Your project presentation/PPT files go here)
 ├── 📁 scripts/
-│   └── train_model.py                   (A script to train and save the final model)
-│
+    └── train_model.py                   (A script to train and save the final model)
 ├── 📁 visualizations/
-│   ├── heatmap.png                      (Correlation heatmap)
-│   ├── pairplot.png                     (Pairplot of key variables)
-│   └── study_hours_vs_exam_score.png    (Scatter plot of study hours vs. score)
-│
+    ├── heatmap.png                      (Correlation heatmap)
+    ├── pairplot.png                     (Pairplot of key variables)
+    └── study_hours_vs_exam_score.png    (Scatter plot of study hours vs. score)
+
 ├── 📁 webapp/
 │   └── app.py                           (The code for our interactive web dashboard)
 │

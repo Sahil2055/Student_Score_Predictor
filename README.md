@@ -2,6 +2,7 @@
 
 **Welcome to the Student Score Predictor project! This repository contains a complete data analysis project that builds a machine learning model to predict student exam scores based on their study habits. It also includes a fun, interactive web app to see the model in action.**
 
+---
 
 ## 📜 Project Overview
 
@@ -115,3 +116,5 @@ I built this project using these awesome open-source tools and libraries:
 # 👨‍💻 Author
 
 -   **Name:** Sahil Kesharwani
+
+---

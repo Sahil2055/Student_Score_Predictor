@@ -83,7 +83,7 @@ First, clone this repository and set up the Python environment.
 ### Step 2: Explore the Analysis 📊
 
 -   Start Jupyter Lab using this `jupyter lab` and then, navigate to the `notebooks/` folder and open `student_score_analysis.ipynb`.
-    -   (Either do this orr directly navigate to the `notebooks/` folder and `student_score_analysis.ipynb`.)
+    -   (Either do this orr directly navigate to the `notebooks/` folder and open `student_score_analysis.ipynb`.)
 
 
 ### Step 3: Launch the Interactive Web App! 🚀
@@ -91,7 +91,7 @@ First, clone this repository and set up the Python environment.
 -   First, train and save the model: `python scripts/train_model.py`
 -   Now, launch the Streamlit web app: `streamlit run webapp/app.py`
 
-A new tab will open in your web browser with the interactive dashboard!
+**A new tab will open in your web browser with the interactive dashboard!**
 
 ---
 

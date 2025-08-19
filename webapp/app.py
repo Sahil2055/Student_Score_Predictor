@@ -72,4 +72,6 @@ if st.sidebar.button('Predict Score'):
 
 # Optional: Add an image from project to make it more attractive
 # Make sure the path is correct relative to the 'app.py' file
+st.image('../Student_Score_Predictor/visualizations/pairplot.png', caption='Pairplot of Study Hours, Attendance, and Exam Score')
 st.image('../Student_Score_Predictor/visualizations/heatmap.png', caption='Correlation Heatmap of Key Factors')
+st.image('../Student_Score_Predictor/visualizations/study_hours_vs_exam_score.png', caption='Scatter Plot with Regression Line of Study Hours vs Exam Score')

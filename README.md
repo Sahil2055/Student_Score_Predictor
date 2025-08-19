@@ -101,10 +101,10 @@ I built this project using these awesome open-source tools and libraries:
 
 -   **Python:** The core programming language.
 -   **Pandas:** For handling and analyzing the data.
--   **Matplotlib & Seaborn:** For creating the beautiful charts and graphs.
+-   **Matplotlib & Seaborn:** For creating the beautiful visualizations(charts and graphs).
 -   **Scikit-learn:** For building and evaluating the machine learning model.
 -   **Streamlit:** For creating and deploying the interactive web app.
--   **Jupyter Notebook:** For my research and analysis.
+-   **Jupyter Notebook:** For exploratory data analysis and documentation.
 
 ---
 

@@ -65,7 +65,7 @@ student-score-prediction/
 You can explore my analysis or run the interactive web app by following these steps.
 
 ### **Step 1: Set Up the Environment**
-```bash
+
 # Clone the repository
 git clone <your-github-repo-link>
 
@@ -96,20 +96,22 @@ python scripts/train_model.py
 streamlit run webapp/app.py
 A new tab will open in your web browser with the interactive dashboard!
 
-🛠️ Technology Stack
+
+---
+
+## 🛠️ Technology Stack
+
 I built this project using these awesome open-source tools and libraries:
 
-Python: The core programming language.
+-   **Python:** The core programming language.
+-   **Pandas:** For handling and analyzing the data.
+-   **Matplotlib & Seaborn:** For creating the beautiful charts and graphs.
+-   **Scikit-learn:** For building and evaluating the machine learning model.
+-   **Streamlit:** For creating and deploying the interactive web app.
+-   **Jupyter Notebook:** For my research and analysis.
 
-Pandas: For handling and analyzing the data.
+---
 
-Matplotlib & Seaborn: For creating the beautiful charts and graphs.
+# 👨‍💻 Author
 
-Scikit-learn: For building and evaluating the machine learning model.
-
-Streamlit: For creating and deploying the interactive web app.
-
-Jupyter Notebook: For my research and analysis.
-
-👨‍💻 Author
-[Your Name]
+-   **Name:** Sahil Kesharwani

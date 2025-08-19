@@ -69,7 +69,6 @@ You can explore my analysis or run the interactive web app by following these st
 
 ### Step 1: Set Up the Environment
 First, clone this repository and set up the Python environment.
-
 1. Clone the repository to your computer
 -   `git clone <your-github-repo-link>`
 

@@ -71,8 +71,8 @@ You can explore my analysis or run the interactive web app by following these st
 
 First, clone this repository and set up the Python environment.
 
--   1. Clone the repository to your computer
-       `git clone <your-github-repo-link>`
+1. Clone the repository to your computer
+-   `git clone <your-github-repo-link>`
 
 -   2. Navigate into the project directory
 `cd student-score-prediction`

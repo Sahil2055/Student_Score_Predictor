@@ -35,7 +35,7 @@ I organized the project in a clean and professional manner. Here’s a look at t
 student-score-prediction/
 
 └── 📁 data/
-    └── student_performance_dataset.csv  (The raw data for our project)
+     └── student_performance_dataset.csv  (The raw data for our project)
 
 ├── 📁 notebooks/
     └── student_score_analysis.ipynb     (Our main analysis and model exploration)

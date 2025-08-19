@@ -6,16 +6,25 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
+
+# --- 1. Build the absolute path to the model file ---
+# This creates a reliable path that works on any computer or server.
+MODEL_DIR = os.path.dirname(os.path.abspath(__file__)) # Gets the directory of the app.py file
+ROOT_DIR = os.path.join(MODEL_DIR, '..') # Moves one level up to the main project folder
+MODEL_PATH = os.path.join(ROOT_DIR, 'student_score_model.pkl') # Specifies the model file name
 
 
 # --- 1. Load the saved model ---
 # The model file is one level up from the 'webapp' folder
 try:
-    model = joblib.load('../Student_Score_Predictor/student_score_model.pkl')
+    model = joblib.load(MODEL_PATH)
 except FileNotFoundError:
-    st.error("Model file not found! Please run the training script first from your terminal: python scripts/train_model.py")
+    st.error(f"Error: Model file not found at {MODEL_PATH}. Please ensure the model file exists and the path is correct.")
     st.stop()
-
+except Exception as e:
+    st.error(f"An error occurred while loading the model: {e}")
+    st.stop()
 
 
 # --- 2. Create the web page layout ---

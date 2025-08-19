@@ -39,7 +39,12 @@ student-score-prediction/
     └── student_performance_dataset.csv  (The raw data for our project)
 
 ├── 📁 notebooks/
-    
+    .--.
+     /.._ \
+     \ \_./
+.--.  `""`
+\.._ \
+ `""`
     └── student_score_analysis.ipynb     (Our main analysis and model exploration)
 
 ├── 📁 presentations/          (Your project presentation/PPT files go here)

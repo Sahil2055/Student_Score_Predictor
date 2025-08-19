@@ -1,7 +1,12 @@
+# This is the main application file for the Streamlit web app
+# It loads the trained model and provides a user interface for predicting student exam scores.
+
+
+# Importing necessary libraries
 import streamlit as st
 import joblib
 import numpy as np
-import pandas as pd # We need pandas to create a DataFrame for the prediction
+
 
 # --- 1. Load the saved model ---
 # The model file is one level up from the 'webapp' folder
@@ -10,6 +15,7 @@ try:
 except FileNotFoundError:
     st.error("Model file not found! Please run the training script first from your terminal: python scripts/train_model.py")
     st.stop()
+
 
 
 # --- 2. Create the web page layout ---
@@ -23,6 +29,8 @@ This web app predicts a student's final exam score based on their study habits.
 Adjust the sliders below to see the predicted score change.
 """)
 
+
+
 # --- 3. Create the user input elements in the sidebar ---
 st.sidebar.header('Input Student Data')
 
@@ -32,6 +40,7 @@ study_hours = st.sidebar.slider('Hours Studied per Day', 0.0, 10.0, 4.0)
 
 # Create a slider for 'Attendance Percentage'
 attendance = st.sidebar.slider('Attendance Percentage (%)', 0, 100, 80)
+
 
 
 # --- 4. Make a prediction and display the result ---
@@ -59,6 +68,8 @@ if st.sidebar.button('Predict Score'):
     else:
         st.error("This score is below the passing threshold. Intervention may be needed. 😟")
 
-# Optional: Add an image from your project to make it more attractive
+
+
+# Optional: Add an image from project to make it more attractive
 # Make sure the path is correct relative to the 'app.py' file
-st.image('../visualizations/heatmap.png', caption='Correlation Heatmap of Key Factors')
+st.image('../Student_Score_Predictor/visualizations/heatmap.png', caption='Correlation Heatmap of Key Factors')

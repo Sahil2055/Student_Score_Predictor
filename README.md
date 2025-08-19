@@ -30,11 +30,12 @@ This project is a complete data science workflow with several key features:
 ---
 
 ## 📂 Project Structure
+
 I organized the project in a clean and professional manner. Here’s a look at the file and folder structure:
 
-student-score-prediction/
-
-└── 📁 data/
+**`student-score-prediction/`**
+-   `📄 README.md`: This file, which provides a detailed overview of the project.
+-   📁 data/
     
     └── student_performance_dataset.csv  (The raw data for our project)
 
@@ -62,7 +63,7 @@ student-score-prediction/
 │   └── app.py                           (The code for our interactive web dashboard)
 │
 ├── 📄 .gitignore                        (Tells Git which files to ignore)
-├── 📄 README.md                         (This file! Your project's front page)
+├── 
 ├── 📄 requirements.txt                  (All the Python libraries needed for this project)
 └── 📄 student_score_model.pkl          (The final, saved machine learning model)
 

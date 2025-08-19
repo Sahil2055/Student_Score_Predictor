@@ -79,14 +79,12 @@ First, clone this repository and set up the Python environment.
     -   On Windows: `.venv\Scripts\activate`
     -   On macOS/Linux: `source .venv/bin/activate`
 
--   4. Install all the necessary libraries
-pip install -r requirements.txt
-Step 2: Explore the Analysis 📊
-Bash
+-   Install all the necessary libraries: `pip install -r requirements.txt`
 
-# Start Jupyter Lab
-jupyter lab
-Then, navigate to the notebooks/ folder and open student_score_analysis.ipynb.
+### Step 2: Explore the Analysis 📊
+
+**Start Jupyter Lab:** `jupyter lab`
+Then, navigate to the `notebooks/` folder and open `student_score_analysis.ipynb`.
 
 Step 3: Launch the Interactive Web App! 🚀
 Bash

@@ -2,11 +2,10 @@
 
 **Welcome to the Student Score Predictor project! This repository contains a complete data analysis project that builds a machine learning model to predict student exam scores based on their study habits. It also includes a fun, interactive web app to see the model in action.**
 
----
 
 ## 📜 Project Overview
 
-I created this project to see how study habits really impact academic success. I used a student performance dataset to uncover insights and build a predictive model that forecasts exam scores based on behavior. The main goal was to create a simple yet effective tool that can estimate a student's final exam score based on their daily study hours and class attendance percentage.
+Have you ever wondered how much study time **really** affects exam results? This project dives into that question! We use a student performance dataset to uncover insights and build a predictive model to forecast academic success based on student behavior.
 
 ---
 

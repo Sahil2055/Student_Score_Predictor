@@ -33,6 +33,7 @@ This project is a complete data science workflow with several key features:
 I organized the project in a clean and professional manner. Here’s a look at the file and folder structure:
 
 student-score-prediction/
+
 │
 ├── 📁 data/
 │   └── student_performance_dataset.csv  (The raw data for our project)
@@ -113,7 +114,7 @@ I built this project using these awesome open-source tools and libraries:
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 -   **Name:** Sahil Kesharwani
 

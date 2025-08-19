@@ -67,35 +67,31 @@ You can explore my analysis or run the interactive web app by following these st
 - Python 3.x
 - A passion for data! ✨
 
+
 ### Step 1: Set Up the Environment
 
 First, clone this repository and set up the Python environment.
 
 -   Clone the repository to your computer: `git clone <your-github-repo-link>`
-
 -   Navigate into the project directory: `cd student-score-prediction`
-
 -   Create and activate a virtual environment:
     -   On Windows: `.venv\Scripts\activate`
     -   On macOS/Linux: `source .venv/bin/activate`
 
 -   Install all the necessary libraries: `pip install -r requirements.txt`
 
+
 ### Step 2: Explore the Analysis 📊
 
-**Start Jupyter Lab:** `jupyter lab`
-Then, navigate to the `notebooks/` folder and open `student_score_analysis.ipynb`.
+Start Jupyter Lab using this `jupyter lab` and then, navigate to the `notebooks/` folder and open `student_score_analysis.ipynb`. (Either do this orr directly navigate to the `notebooks/` folder and `student_score_analysis.ipynb`.)
 
-Step 3: Launch the Interactive Web App! 🚀
-Bash
 
-# First, train and save the model
-python scripts/train_model.py
+### Step 3: Launch the Interactive Web App! 🚀
 
-# Now, launch the Streamlit web app
-streamlit run webapp/app.py
+-   First, train and save the model: `python scripts/train_model.py`
+
+-   Now, launch the Streamlit web app: `streamlit run webapp/app.py`
 A new tab will open in your web browser with the interactive dashboard!
-
 
 ---
 

@@ -30,5 +30,5 @@ print("Model training complete.")
 
 
 # Save the trained model to a file in the main project directory
-joblib.dump(model, '../Student_Score_Predictor/student_score_model.pkl')
+joblib.dump(model, '../student_score_model.pkl')
 print("Model saved as 'student_score_model.pkl'.")

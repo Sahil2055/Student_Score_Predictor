@@ -50,7 +50,7 @@ I organized the project in a clean and professional manner. Here’s a look at t
 -   `📁 notebooks/`
     -   `student_score_analysis.ipynb`: The main Jupyter notebook having analysis and model exploration.
 -   `📁 presentations/`
-    -   `.pdf`: The presentation file that explains the project's goals, methods, and results.
+    -   `Student_Score_Predictor_Presentation.pdf`: The presentation file that explains the project's goals, methods, and results.
 -   `📁 scripts/`
     -   `train_model.py`: The python file that contains a script to train and save the final model.
 -   `📁 visualizations/`

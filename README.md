@@ -16,7 +16,7 @@ The main goal is to create a simple yet effective tool that can estimate a stude
 
 ## 🌐🔗Deployed Version Of Project
 
-**🔗https://sk-student-score-predictor.streamlit.app/🌐**
+**🔗 https://sk-student-score-predictor.streamlit.app/ 🌐**
 
 ---
 
